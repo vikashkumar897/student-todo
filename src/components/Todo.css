@@ -1,0 +1,29 @@
+body {
+  background-color: #333;
+}
+
+.addBtn {
+  color: rgb(255, 255, 255);
+  background-color: #222;
+  border: none;
+  height: 24px;
+  width: 50px;
+  border-radius: 4px;
+}
+
+input {
+  height: 18px;
+}
+
+.mainDiv {
+  width: 60%;
+  margin: auto;
+  margin-top: 100px;
+  border: 1px solid aqua;
+  background-color: aquamarine;
+  border-radius: 10px;
+  padding: 10px;
+}
+.title {
+  text-align: center;
+}
