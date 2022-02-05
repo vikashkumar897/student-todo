@@ -6,13 +6,15 @@ body {
   color: rgb(255, 255, 255);
   background-color: #222;
   border: none;
-  height: 24px;
+  height: 25px;
   width: 50px;
   border-radius: 4px;
 }
 
 input {
-  height: 18px;
+  height: 24px;
+  border: none;
+  margin-left: 5px;
 }
 
 .mainDiv {
@@ -26,4 +28,56 @@ input {
 }
 .title {
   text-align: center;
+}
+.itemsContainer {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 28% 60% 12%;
+  background-color: white;
+  border-radius: 5px;
+}
+.nothingFound {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: white;
+  height: 200px;
+  border-radius: 5px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.dltBtn {
+  border: none;
+  background-color: #222;
+  height: 25px;
+  border-radius: 5px;
+  color: white;
+  margin-top: 18px;
+}
+.prev,
+.next {
+  border: none;
+  background-color: #222;
+  height: 25px;
+  border-radius: 5px;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.prev:disabled,
+.next:disabled {
+  background-color: #999;
+}
+.pageNumber {
+  background-color: aliceblue;
+  padding: 5px;
+  border-radius: 3px;
 }
