@@ -47,7 +47,7 @@ export const Todo = () => {
 
       setLoading(false);
       console.log("Time");
-    }, 1000);
+    }, 500);
   };
 
   return (
