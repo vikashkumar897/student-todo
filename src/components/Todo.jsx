@@ -9,7 +9,9 @@ export const Todo = () => {
 
   const getLength = async function () {
     try {
-      let response = await fetch("http://localhost:3001/todos?_page=1&_limit=10000");
+      let response = await fetch(
+        "https://arcane-retreat-44075.herokuapp.com/todos?_page=1&_limit=10000"
+      );
       let total = response.headers.get("X-Total-Count");
       setLength(+total);
     } catch (error) {
@@ -19,7 +21,9 @@ export const Todo = () => {
   const [length, setLength] = useState(0);
 
   async function getData() {
-    let response = await fetch(`http://localhost:3001/todos?_page=${page}&_limit=3`);
+    let response = await fetch(
+      `https://arcane-retreat-44075.herokuapp.com/todos?_page=${page}&_limit=3`
+    );
     let data = await response.json();
 
     setTodos(data);
@@ -74,7 +78,7 @@ export const Todo = () => {
           className="addBtn"
           onClick={() => {
             setLoading(true);
-            fetch("http://localhost:3001/todos", {
+            fetch("https://arcane-retreat-44075.herokuapp.com/todos", {
               method: "POST",
               body: JSON.stringify(item),
               headers: { "content-type": "Application/json" },
@@ -114,12 +118,12 @@ export const Todo = () => {
                     className="dltBtn"
                     onClick={() => {
                       setLoading(true);
-                      fetch(`http://localhost:3001/todos/${i.id}`, { method: "DELETE" }).then(
-                        () => {
-                          setLength(length - 1);
-                          consumeTime();
-                        }
-                      );
+                      fetch(`https://arcane-retreat-44075.herokuapp.com/todos/${i.id}`, {
+                        method: "DELETE",
+                      }).then(() => {
+                        setLength(length - 1);
+                        consumeTime();
+                      });
                     }}
                   >
                     Delete
