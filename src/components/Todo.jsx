@@ -47,11 +47,12 @@ export const Todo = () => {
 
   const consumeTime = () => {
     setTimeout(() => {
+      // setPage(Math.floor(item / 3));
       getData();
 
       setLoading(false);
-      console.log("Time");
-    }, 500);
+      // console.log("Time", page);
+    }, 100);
   };
 
   return (
