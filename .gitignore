@@ -17,7 +17,11 @@
 .env.development.local
 .env.test.local
 .env.production.local
+student-todo.zip
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Local Netlify folder
+.netlify

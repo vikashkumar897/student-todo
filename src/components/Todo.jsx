@@ -97,7 +97,7 @@ export const Todo = () => {
         {length < 1 ? (
           <div className="nothingFound">
             <img
-              src="http://ebed.in/images/noitem.png"
+              src="/noitem.png"
               alt=""
               style={{ height: "200px", display: "block", margin: "auto" }}
             />
